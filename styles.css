@@ -1,0 +1,15 @@
+body {
+    background: white;
+}
+
+.stats, .all, .best {
+    font-family: "Courier", serif;
+}
+
+.best {
+    font-size: 48px;
+}
+
+.stats {
+    font-size: 24px;
+}  
