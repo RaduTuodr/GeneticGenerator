@@ -11,8 +11,6 @@ let bestPhrase;
 let allPhrases;
 let stats;
 
-function setup() {
-
 let createPopulation = false;
 let prints = false;
 
@@ -57,7 +55,7 @@ function draw() {
     if (target !== "") {
 
         if (createPopulation === false) {
-            
+
             population = new Population(target, mutationRate, maxPopulation);
             createPopulation = true;
         }
@@ -81,11 +79,11 @@ function displayInfo() {
     bestPhrase.html("Best phrase:<br>" + answer);
 
     let statsText =
-        "Total generations:\t"  + population.getGenerations() + "<br>";
+        "Total generations:\t" + population.getGenerations() + "<br>";
     statsText +=
         "Average fitness:\t" + nf(population.getAverageFitness().toFixed(2)) + "<br>";
     statsText +=
-        "Total population:\t"+ maxPopulation  + "<br>";
+        "Total population:\t" + maxPopulation + "<br>";
     statsText +=
         "Mutation rate:\t" + int(mutationRate * 100) + "%";
 
