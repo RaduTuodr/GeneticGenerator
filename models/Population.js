@@ -1,3 +1,5 @@
+let displayLimitDefault = 40;
+
 class Population {
 
     constructor(targetEntity, mutationRate, numberOfEntities) {
@@ -42,7 +44,7 @@ class Population {
 
     getAllPhrases() {
         let allPhrases = "";
-        let displayLimit = min(this.population.length, 50);
+        let displayLimit = min(this.population.length, displayLimitDefault);
 
         for (let i = 0; i < displayLimit; i++)
             allPhrases += this.population[i].getPhrase() + "<br>";
