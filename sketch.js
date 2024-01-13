@@ -40,11 +40,8 @@ function setup() {
     stats = createDiv("Stats");
     stats.class("stats");
 
-    target = "Radu Tudor Eduard";
     maxPopulation = 250;
     mutationRate = 0.035;
-
-    population = new Population(target, mutationRate, maxPopulation);
 
     maxPopulation = 200;
     mutationRate = 0.01;
